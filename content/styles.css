@@ -205,7 +205,7 @@ nav li {
     text-align: center;
     align-content: center;
     background-color: var(--tertiary-color);
-    color: var(--background-color);
+    color: var(--font-color);
 }
 
 #serviços .container h1 {
@@ -216,7 +216,7 @@ nav li {
     width: 550px;
     height: 250px;
     border: black 2px solid;
-    background-color: var(--footer-color);
+    background-color: var(--background-color);
     border-radius: 10px;
     display: flex;
     align-content: center;
@@ -273,6 +273,12 @@ nav li {
     margin-top: 10vh;
     display: flex;
     align-items: center;
+}
+
+iframe {
+    margin: auto;
+    height: 500px;
+    width: 600px;
 }
 
 form {
