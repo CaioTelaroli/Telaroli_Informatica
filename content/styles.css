@@ -44,6 +44,22 @@ body {
     flex-direction: row;
 }
 
+.button {
+    color: var(--primary-color);
+    border: var(--primary-color) 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    justify-self: center;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    transition: 0.5s;
+}
+
 h1 {
     font-size: 36pt;
     color: var(--primary-color);
@@ -142,22 +158,6 @@ nav li {
     margin-bottom: 100px;
 }
 
-#home a {
-    color: var(--primary-color);
-    border: var(--primary-color) 2px solid;
-    border-radius: 5px;
-    padding: 5px;
-    text-decoration: none;
-    justify-self: center;
-    transition: 0.5s;
-}
-
-#home a:hover {
-    color: var(--background-color);
-    background-color: var(--primary-color);
-    transition: 0.5s;
-}
-
 /* SOBRE */
 #sobre {
     height: 100vh;
@@ -230,7 +230,7 @@ nav li {
 
 /* CONTATO */
 #contato {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-content: center;
     text-align: center;
@@ -272,7 +272,14 @@ nav li {
     margin: auto;
     margin-top: 10vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+#contato a{
+    margin: auto;
+    width: fit-content;
 }
 
 iframe {
